@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root{
+    --ff-primary:'Nunito Sans', sans-serif;
+
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-white: #ffffff;
+    --clr-light-gray: #F3F3F3;
+    --clr-darker-light-gray: #EEEEEE;
+    --clr-light-yellow: #FBFFA7;
+    --clr-light-cyan: #B6FFC0;
+    --clr-lighter-blue: #B1C5FF;
+    --clr-light-purple: #D5B3FF;
+    --clr-orange: #FF764D;
+    --clr-light-blue: #2233FF;
+    --clr-blue: #0000FF;
+    --clr-black: #000000;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+@media (min-width: 800px) {
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+.mobile-menu-nav{
+    display: none;
+}
+body{
+    background-color: var(--clr-light);
+    color:var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1,6;
+}
+/* section{
+    padding: 5em 2em;
+} */
+img{
+    display: block;
+    max-width: 100%;
+}
+figure{
+    margin: 0;
+}
+/* Header an navbar styles */
+.header{
+    border-bottom: .2em solid var(--clr-light-gray);
+}
+.nav__bar--logo{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+}
+.nav__bar--primary{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav__bar--primary-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.nav__bar--secondary-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.nav__sticky{
+    padding: 1em;
+    position: sticky;
+}
+.nav__sticky--list{
+    display: flex;
+    justify-content:flex-start;
+    gap: 1em;
+}
+/* hero section */
+.hero__section{
+    display: grid;
+    place-content: center;
+}
